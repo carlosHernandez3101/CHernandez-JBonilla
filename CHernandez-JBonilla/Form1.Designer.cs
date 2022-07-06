@@ -30,17 +30,28 @@
         {
             this.tcGestionBanco = new System.Windows.Forms.TabControl();
             this.tpRegBanco = new System.Windows.Forms.TabPage();
-            this.tpRegSuc = new System.Windows.Forms.TabPage();
-            this.tpConsSuc = new System.Windows.Forms.TabPage();
-            this.lbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnAgregarBanco = new System.Windows.Forms.Button();
-            this.tbxNomBan = new System.Windows.Forms.TextBox();
-            this.tbxNitBan = new System.Windows.Forms.TextBox();
             this.dtFechaCreacion = new System.Windows.Forms.DateTimePicker();
+            this.tbxNitBan = new System.Windows.Forms.TextBox();
+            this.tbxNomBan = new System.Windows.Forms.TextBox();
+            this.btnAgregarBanco = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.tpRegSuc = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tpConsSuc = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tcGestionBanco.SuspendLayout();
             this.tpRegBanco.SuspendLayout();
+            this.tpRegSuc.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcGestionBanco
@@ -71,8 +82,76 @@
             this.tpRegBanco.Text = "REGISTRAR BANCO";
             this.tpRegBanco.UseVisualStyleBackColor = true;
             // 
+            // dtFechaCreacion
+            // 
+            this.dtFechaCreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaCreacion.Location = new System.Drawing.Point(239, 162);
+            this.dtFechaCreacion.Name = "dtFechaCreacion";
+            this.dtFechaCreacion.Size = new System.Drawing.Size(200, 21);
+            this.dtFechaCreacion.TabIndex = 6;
+            // 
+            // tbxNitBan
+            // 
+            this.tbxNitBan.Location = new System.Drawing.Point(239, 107);
+            this.tbxNitBan.Name = "tbxNitBan";
+            this.tbxNitBan.Size = new System.Drawing.Size(100, 20);
+            this.tbxNitBan.TabIndex = 5;
+            // 
+            // tbxNomBan
+            // 
+            this.tbxNomBan.Location = new System.Drawing.Point(239, 57);
+            this.tbxNomBan.Name = "tbxNomBan";
+            this.tbxNomBan.Size = new System.Drawing.Size(100, 20);
+            this.tbxNomBan.TabIndex = 4;
+            // 
+            // btnAgregarBanco
+            // 
+            this.btnAgregarBanco.Location = new System.Drawing.Point(227, 266);
+            this.btnAgregarBanco.Name = "btnAgregarBanco";
+            this.btnAgregarBanco.Size = new System.Drawing.Size(195, 55);
+            this.btnAgregarBanco.TabIndex = 3;
+            this.btnAgregarBanco.Text = "REGISTRAR BANCO";
+            this.btnAgregarBanco.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(78, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "FECHA DE CREACIÓN:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(78, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NIT BANCO:";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(78, 57);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(97, 13);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "NOMBRE BANCO:";
+            // 
             // tpRegSuc
             // 
+            this.tpRegSuc.Controls.Add(this.comboBox1);
+            this.tpRegSuc.Controls.Add(this.textBox4);
+            this.tpRegSuc.Controls.Add(this.textBox3);
+            this.tpRegSuc.Controls.Add(this.textBox2);
+            this.tpRegSuc.Controls.Add(this.textBox1);
+            this.tpRegSuc.Controls.Add(this.label7);
+            this.tpRegSuc.Controls.Add(this.label6);
+            this.tpRegSuc.Controls.Add(this.label5);
+            this.tpRegSuc.Controls.Add(this.label4);
+            this.tpRegSuc.Controls.Add(this.label1);
             this.tpRegSuc.Location = new System.Drawing.Point(4, 22);
             this.tpRegSuc.Name = "tpRegSuc";
             this.tpRegSuc.Padding = new System.Windows.Forms.Padding(3);
@@ -80,6 +159,42 @@
             this.tpRegSuc.TabIndex = 1;
             this.tpRegSuc.Text = "REGISTRAR SUCURSAL";
             this.tpRegSuc.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(318, 112);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(145, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "NUMERO DE EMPLEADOS:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(47, 190);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "UBICACIÓN:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(318, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "NOMBRE SUCURSAL:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(47, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CODIGO SUCURSAL:";
             // 
             // tpConsSuc
             // 
@@ -91,63 +206,50 @@
             this.tpConsSuc.Text = "CONSULTAR SUCURSAL";
             this.tpConsSuc.UseVisualStyleBackColor = true;
             // 
-            // lbl
+            // label7
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(78, 57);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(97, 13);
-            this.lbl.TabIndex = 0;
-            this.lbl.Text = "NOMBRE BANCO:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(47, 112);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(132, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "ANTIGUEDAD EN AÑOS:";
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "NIT BANCO:";
+            this.textBox1.Location = new System.Drawing.Point(50, 66);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
             // 
-            // label3
+            // textBox2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "FECHA DE CREACIÓN:";
+            this.textBox2.Location = new System.Drawing.Point(321, 66);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 6;
             // 
-            // btnAgregarBanco
+            // textBox3
             // 
-            this.btnAgregarBanco.Location = new System.Drawing.Point(227, 266);
-            this.btnAgregarBanco.Name = "btnAgregarBanco";
-            this.btnAgregarBanco.Size = new System.Drawing.Size(195, 55);
-            this.btnAgregarBanco.TabIndex = 3;
-            this.btnAgregarBanco.Text = "REGISTRAR BANCO";
-            this.btnAgregarBanco.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(321, 137);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 7;
             // 
-            // tbxNomBan
+            // textBox4
             // 
-            this.tbxNomBan.Location = new System.Drawing.Point(239, 57);
-            this.tbxNomBan.Name = "tbxNomBan";
-            this.tbxNomBan.Size = new System.Drawing.Size(100, 20);
-            this.tbxNomBan.TabIndex = 4;
+            this.textBox4.Location = new System.Drawing.Point(50, 137);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 8;
             // 
-            // tbxNitBan
+            // comboBox1
             // 
-            this.tbxNitBan.Location = new System.Drawing.Point(239, 107);
-            this.tbxNitBan.Name = "tbxNitBan";
-            this.tbxNitBan.Size = new System.Drawing.Size(100, 20);
-            this.tbxNitBan.TabIndex = 5;
-            // 
-            // dtFechaCreacion
-            // 
-            this.dtFechaCreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtFechaCreacion.Location = new System.Drawing.Point(239, 162);
-            this.dtFechaCreacion.Name = "dtFechaCreacion";
-            this.dtFechaCreacion.Size = new System.Drawing.Size(200, 21);
-            this.dtFechaCreacion.TabIndex = 6;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(156, 198);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -160,6 +262,8 @@
             this.tcGestionBanco.ResumeLayout(false);
             this.tpRegBanco.ResumeLayout(false);
             this.tpRegBanco.PerformLayout();
+            this.tpRegSuc.ResumeLayout(false);
+            this.tpRegSuc.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -177,6 +281,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
 
