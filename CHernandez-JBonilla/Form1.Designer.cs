@@ -38,17 +38,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.tpRegSuc = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnRegistrarSuc = new System.Windows.Forms.Button();
+            this.cbxUbiSuc = new System.Windows.Forms.ComboBox();
+            this.txtAniosAnt = new System.Windows.Forms.TextBox();
+            this.txtNumEmp = new System.Windows.Forms.TextBox();
+            this.txtNomSuc = new System.Windows.Forms.TextBox();
+            this.txtCodSuc = new System.Windows.Forms.TextBox();
+            this.lblAntAnios = new System.Windows.Forms.Label();
+            this.lblNumEmp = new System.Windows.Forms.Label();
+            this.lblUbiSuc = new System.Windows.Forms.Label();
+            this.lblNomSuc = new System.Windows.Forms.Label();
+            this.lblCodSuc = new System.Windows.Forms.Label();
             this.tpConsSuc = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -116,6 +116,7 @@
             this.btnAgregarBanco.TabIndex = 3;
             this.btnAgregarBanco.Text = "REGISTRAR BANCO";
             this.btnAgregarBanco.UseVisualStyleBackColor = true;
+            this.btnAgregarBanco.Click += new System.EventHandler(this.btnAgregarBanco_Click);
             // 
             // label3
             // 
@@ -147,17 +148,17 @@
             // tpRegSuc
             // 
             this.tpRegSuc.Controls.Add(this.label8);
-            this.tpRegSuc.Controls.Add(this.button1);
-            this.tpRegSuc.Controls.Add(this.comboBox1);
-            this.tpRegSuc.Controls.Add(this.textBox4);
-            this.tpRegSuc.Controls.Add(this.textBox3);
-            this.tpRegSuc.Controls.Add(this.textBox2);
-            this.tpRegSuc.Controls.Add(this.textBox1);
-            this.tpRegSuc.Controls.Add(this.label7);
-            this.tpRegSuc.Controls.Add(this.label6);
-            this.tpRegSuc.Controls.Add(this.label5);
-            this.tpRegSuc.Controls.Add(this.label4);
-            this.tpRegSuc.Controls.Add(this.label1);
+            this.tpRegSuc.Controls.Add(this.btnRegistrarSuc);
+            this.tpRegSuc.Controls.Add(this.cbxUbiSuc);
+            this.tpRegSuc.Controls.Add(this.txtAniosAnt);
+            this.tpRegSuc.Controls.Add(this.txtNumEmp);
+            this.tpRegSuc.Controls.Add(this.txtNomSuc);
+            this.tpRegSuc.Controls.Add(this.txtCodSuc);
+            this.tpRegSuc.Controls.Add(this.lblAntAnios);
+            this.tpRegSuc.Controls.Add(this.lblNumEmp);
+            this.tpRegSuc.Controls.Add(this.lblUbiSuc);
+            this.tpRegSuc.Controls.Add(this.lblNomSuc);
+            this.tpRegSuc.Controls.Add(this.lblCodSuc);
             this.tpRegSuc.Location = new System.Drawing.Point(4, 22);
             this.tpRegSuc.Name = "tpRegSuc";
             this.tpRegSuc.Padding = new System.Windows.Forms.Padding(3);
@@ -166,104 +167,104 @@
             this.tpRegSuc.Text = "REGISTRAR SUCURSAL";
             this.tpRegSuc.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnRegistrarSuc
             // 
-            this.button1.Location = new System.Drawing.Point(248, 293);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 46);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "REGISTRAR SUCURSAL";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRegistrarSuc.Location = new System.Drawing.Point(248, 293);
+            this.btnRegistrarSuc.Name = "btnRegistrarSuc";
+            this.btnRegistrarSuc.Size = new System.Drawing.Size(168, 46);
+            this.btnRegistrarSuc.TabIndex = 10;
+            this.btnRegistrarSuc.Text = "REGISTRAR SUCURSAL";
+            this.btnRegistrarSuc.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cbxUbiSuc
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxUbiSuc.FormattingEnabled = true;
+            this.cbxUbiSuc.Items.AddRange(new object[] {
             "norte",
             "sur",
             "centro"});
-            this.comboBox1.Location = new System.Drawing.Point(178, 225);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
+            this.cbxUbiSuc.Location = new System.Drawing.Point(178, 225);
+            this.cbxUbiSuc.Name = "cbxUbiSuc";
+            this.cbxUbiSuc.Size = new System.Drawing.Size(121, 21);
+            this.cbxUbiSuc.TabIndex = 9;
             // 
-            // textBox4
+            // txtAniosAnt
             // 
-            this.textBox4.Location = new System.Drawing.Point(80, 170);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtAniosAnt.Location = new System.Drawing.Point(80, 170);
+            this.txtAniosAnt.Name = "txtAniosAnt";
+            this.txtAniosAnt.Size = new System.Drawing.Size(100, 20);
+            this.txtAniosAnt.TabIndex = 8;
             // 
-            // textBox3
+            // txtNumEmp
             // 
-            this.textBox3.Location = new System.Drawing.Point(351, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtNumEmp.Location = new System.Drawing.Point(351, 170);
+            this.txtNumEmp.Name = "txtNumEmp";
+            this.txtNumEmp.Size = new System.Drawing.Size(100, 20);
+            this.txtNumEmp.TabIndex = 7;
             // 
-            // textBox2
+            // txtNomSuc
             // 
-            this.textBox2.Location = new System.Drawing.Point(351, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtNomSuc.Location = new System.Drawing.Point(351, 90);
+            this.txtNomSuc.Name = "txtNomSuc";
+            this.txtNomSuc.Size = new System.Drawing.Size(100, 20);
+            this.txtNomSuc.TabIndex = 6;
             // 
-            // textBox1
+            // txtCodSuc
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtCodSuc.Location = new System.Drawing.Point(80, 90);
+            this.txtCodSuc.Name = "txtCodSuc";
+            this.txtCodSuc.Size = new System.Drawing.Size(100, 20);
+            this.txtCodSuc.TabIndex = 5;
             // 
-            // label7
+            // lblAntAnios
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(77, 145);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(165, 15);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "ANTIGUEDAD EN AÑOS:";
+            this.lblAntAnios.AutoSize = true;
+            this.lblAntAnios.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntAnios.Location = new System.Drawing.Point(77, 145);
+            this.lblAntAnios.Name = "lblAntAnios";
+            this.lblAntAnios.Size = new System.Drawing.Size(165, 15);
+            this.lblAntAnios.TabIndex = 4;
+            this.lblAntAnios.Text = "ANTIGUEDAD EN AÑOS:";
             // 
-            // label6
+            // lblNumEmp
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(348, 145);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 15);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "NUMERO DE EMPLEADOS:";
+            this.lblNumEmp.AutoSize = true;
+            this.lblNumEmp.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumEmp.Location = new System.Drawing.Point(348, 145);
+            this.lblNumEmp.Name = "lblNumEmp";
+            this.lblNumEmp.Size = new System.Drawing.Size(175, 15);
+            this.lblNumEmp.TabIndex = 3;
+            this.lblNumEmp.Text = "NUMERO DE EMPLEADOS:";
             // 
-            // label5
+            // lblUbiSuc
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 233);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 15);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "UBICACIÓN:";
+            this.lblUbiSuc.AutoSize = true;
+            this.lblUbiSuc.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUbiSuc.Location = new System.Drawing.Point(77, 233);
+            this.lblUbiSuc.Name = "lblUbiSuc";
+            this.lblUbiSuc.Size = new System.Drawing.Size(91, 15);
+            this.lblUbiSuc.TabIndex = 2;
+            this.lblUbiSuc.Text = "UBICACIÓN:";
             // 
-            // label4
+            // lblNomSuc
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(348, 60);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "NOMBRE SUCURSAL:";
+            this.lblNomSuc.AutoSize = true;
+            this.lblNomSuc.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomSuc.Location = new System.Drawing.Point(348, 60);
+            this.lblNomSuc.Name = "lblNomSuc";
+            this.lblNomSuc.Size = new System.Drawing.Size(144, 15);
+            this.lblNomSuc.TabIndex = 1;
+            this.lblNomSuc.Text = "NOMBRE SUCURSAL:";
             // 
-            // label1
+            // lblCodSuc
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CODIGO SUCURSAL:";
+            this.lblCodSuc.AutoSize = true;
+            this.lblCodSuc.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodSuc.Location = new System.Drawing.Point(77, 60);
+            this.lblCodSuc.Name = "lblCodSuc";
+            this.lblCodSuc.Size = new System.Drawing.Size(145, 15);
+            this.lblCodSuc.TabIndex = 0;
+            this.lblCodSuc.Text = "CODIGO SUCURSAL:";
             // 
             // tpConsSuc
             // 
@@ -325,17 +326,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblNumEmp;
+        private System.Windows.Forms.Label lblUbiSuc;
+        private System.Windows.Forms.Label lblNomSuc;
+        private System.Windows.Forms.Label lblCodSuc;
+        private System.Windows.Forms.ComboBox cbxUbiSuc;
+        private System.Windows.Forms.TextBox txtAniosAnt;
+        private System.Windows.Forms.TextBox txtNumEmp;
+        private System.Windows.Forms.TextBox txtNomSuc;
+        private System.Windows.Forms.TextBox txtCodSuc;
+        private System.Windows.Forms.Label lblAntAnios;
+        private System.Windows.Forms.Button btnRegistrarSuc;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
     }
